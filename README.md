@@ -67,9 +67,9 @@ e. Bar charts showing the average annual decrease in fatalities per 100,000 sold
 
 ![self_inflicted_10_year](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/be98b8b0-135a-4269-b269-0c2a59c3bb13)
 
-3. Data Visualization Techniques
+### 3. Data Visualization Techniques
 
-### Various data visualization techniques were employed:
+Various data visualization techniques were employed:
 
 Line plots to show year-by-year changes.
 Doughnut charts to illustrate force distribution and categorical breakdown.
