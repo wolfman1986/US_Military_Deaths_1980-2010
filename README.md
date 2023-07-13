@@ -49,27 +49,27 @@ d. Line charts representing trends in different categories of fatalities per 100
 
 ![terrorist_attacks_line](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/eb7eb48b-0606-4e22-85d5-93ec6e9fc8e6)
 
-### Accidents and illnesses showed significant decreases over time.
-### Self-inflicted incidents had spikes in the mid-1980s, 1996, and during the late 2000s.
-### Hostile actions had significant events, such as the 1983 Beirut Barracks Bombing and the War on Terror.
-### Homicides had fluctuations with a spike in the early 1990s and a sharp decline afterward.
-### Terrorist attacks had spikes associated with notable incidents such as the Beirut U.S. Embassy Bombing, Oklahoma City Bombing, USS Cole Bombing, and the September 11th attacks.
+Accidents and illnesses showed significant decreases over time.
+Self-inflicted incidents had spikes in the mid-1980s, 1996, and during the late 2000s.
+Hostile actions had significant events, such as the 1983 Beirut Barracks Bombing and the War on Terror.
+Homicides had fluctuations with a spike in the early 1990s and a sharp decline afterward.
+Terrorist attacks had spikes associated with notable incidents such as the Beirut U.S. Embassy Bombing, Oklahoma City Bombing, USS Cole Bombing, and the September 11th attacks.
 
 e. Bar charts showing the average annual decrease in fatalities per 100,000 soldiers over 10-year periods.
 
 ![total_deaths_avg](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/cece1bc3-9408-42e4-8460-758043409e64)
 
-Accident deaths showed a decreasing trend over the three 10-year time periods.
+### Accident deaths showed a decreasing trend over the three 10-year time periods.
 
 ![accident_decrease_bar](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/c4f67f3b-9206-4e7a-99c9-956d473cf7de)
 
-Self-inflicted deaths had minimal decreases in the 1980s, a rise in the early 1990s, a sharp drop in the late 1990s, and a final spike in the late 2000s.
+### Self-inflicted deaths had minimal decreases in the 1980s, a rise in the early 1990s, a sharp drop in the late 1990s, and a final spike in the late 2000s.
 
 ![self_inflicted_10_year](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/be98b8b0-135a-4269-b269-0c2a59c3bb13)
 
 3. Data Visualization Techniques
 
-Various data visualization techniques were employed:
+### Various data visualization techniques were employed:
 
 Line plots to show year-by-year changes.
 Doughnut charts to illustrate force distribution and categorical breakdown.
@@ -77,19 +77,19 @@ Line charts to represent trends over time.
 Bar charts to show changes over time periods.
 Visualization choices were made to ensure an accurate representation of the data and effectively highlight trends.
 
-4. Data Preprocessing and Cleaning
+### 4. Data Preprocessing and Cleaning
 
 The dataset was already well-structured, with no missing values. However, some column names had leading or trailing whitespaces, which were removed using the .strip() method.
 
-5. Challenges Faced
+### 5. Challenges Faced
 
 The challenges during the analysis included determining the story to tell based on the available data, minimizing wasted space in the graphs, and calculating accurate representations of data through ratioed calculations.
 
-6. Key Findings
+### 6. Key Findings
 
 The most significant finding was the significant decline in the rate of fatal accidents from 1980 to 2010. This decrease can be attributed to safety programs, enhanced military training, protective equipment, policy implementation, and cultural shifts.
 
-7. Interpretation and Utilization of Results
+### 7. Interpretation and Utilization of Results
 
 The results provide historical insights into the U.S. military population, culture, and the impact of various factors on the statistical data. They can be used to understand changes in military operations, policy initiatives, training, technology adoption, and demographic shifts over time.
 
