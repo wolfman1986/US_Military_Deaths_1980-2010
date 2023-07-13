@@ -11,11 +11,13 @@ Questionnaire and Analysis
 The main objective of the analysis was to develop visual charts based on the data points and provide a generalized observation of trends in U.S. military fatalities. The analysis aimed to explore trends related to specific conflicts, economic activity, military force restructuring, program implementation, medical treatment, and other factors.
 
 2. Visualizations and Observations
+
 a. Line plot showing year-by-year changes in total military strength.
 ![total_mil_strength_line](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/0090d61a-7460-4f7d-95a3-1071e98c6a94)
 
 
 Observed a steep decline in total military strength from the 1980s to the lowest level in 1999, followed by a slight increase in the following decade due to the war on terror.
+
 b. Three doughnut charts illustrating force distribution in 1980, 1990, and 2010.
 
 ![1980_pop_doughnut](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/ab0d7199-b18d-43f3-acb4-37915dc2ee96)
