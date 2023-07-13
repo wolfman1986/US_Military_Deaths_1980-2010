@@ -1,15 +1,4 @@
 # US_Military_Deaths_1980-2010
-
-Summarize the intent
-Insert speaker notes
-Put graphics into the readme (screenshots)
-how to make a markdown image
-
-
-
-Format for adding image inside the markdown
-![anything](ppt_images\ppt_images.png)
-
 Python Data Science Midterm Project
 Overview
 This project analyzes a dataset obtained from www.kaggle.com, which contains a historical numerical record of all U.S. military deaths from 1980 to 2010. The objective of the analysis was to develop visual charts based on the data points and provide insights into trends and patterns observed in the dataset.
