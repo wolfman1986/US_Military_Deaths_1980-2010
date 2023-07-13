@@ -1,12 +1,13 @@
 # US_Military_Deaths_1980-2010
 Python Data Science Midterm Project
-Overview
+
+## Overview
 This project analyzes a dataset obtained from www.kaggle.com, which contains a historical numerical record of all U.S. military deaths from 1980 to 2010. The objective of the analysis was to develop visual charts based on the data points and provide insights into trends and patterns observed in the dataset.
 
-Project Details
+## Project Details
 Dataset: The dataset contains information on U.S. military fatalities, including columns such as Calendar Year, Total Military FTE, Total Deaths, Accident, Hostile Action, Homicide, Illness, Self-Inflicted, and Terrorist Attack.
 
-Questionnaire and Analysis
+## Questionnaire and Analysis
 1. Main Objective
 The main objective of the analysis was to develop visual charts based on the data points and provide a generalized observation of trends in U.S. military fatalities. The analysis aimed to explore trends related to specific conflicts, economic activity, military force restructuring, program implementation, medical treatment, and other factors.
 
@@ -99,7 +100,9 @@ To run the code for this analysis:
 Make sure you have Python and the required dependencies installed.
 Download the dataset from www.kaggle.com and place it in the same directory as the code.
 Run the Python script to execute the analysis and generate the visualizations.
+
 Additional Notes
+
 The code provided is for reference purposes only and may require adjustments based on your specific environment and dataset.
 Feel free to modify the code or adapt it to suit your requirements.
 Make sure to provide appropriate credits and references for the dataset used in your analysis.
