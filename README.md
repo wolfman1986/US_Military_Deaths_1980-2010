@@ -23,15 +23,39 @@ The main objective of the analysis was to develop visual charts based on the dat
 
 2. Visualizations and Observations
 a. Line plot showing year-by-year changes in total military strength.
+![total_mil_strength_line](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/0090d61a-7460-4f7d-95a3-1071e98c6a94)
+
 
 Observed a steep decline in total military strength from the 1980s to the lowest level in 1999, followed by a slight increase in the following decade due to the war on terror.
 b. Three doughnut charts illustrating force distribution in 1980, 1990, and 2010.
 
+![1980_pop_doughnut](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/ab0d7199-b18d-43f3-acb4-37915dc2ee96)
+
+![1990_pop_doughnut](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/88a92063-bbd2-413e-aa3a-78c999ec7f8a)
+
+![2010_pop_doughnut](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/d7200b56-09fe-4304-b5e9-370497bae488)
+
+
 Noted a decrease in the percentage of active duty force and an increase in Guard and Reserve components from 1980 to 2010.
 c. Doughnut chart representing the categorical breakdown of U.S. military fatalities.
 
+![fatality_category_breakdown](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/de24ef2e-0290-49d0-a8d9-fd8690d1859b)
+
+
 Found that accidents accounted for the majority (52.10%) of all fatalities, followed by illnesses, self-inflicted incidents, hostile actions, homicides, and terrorist attacks.
 d. Line charts representing trends in different categories of fatalities per 100,000 soldiers.
+
+![accident_line](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/75806fa6-aa39-4e50-969b-1b820396409f)
+
+![homicide_line](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/3e983c36-ce27-4b28-a237-848bdb9e4204)
+
+![hostile_action_line](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/3a665f59-762d-48e1-8dbf-7c7ba073937c)
+
+![illness_line](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/646e0a7d-3612-4805-be9c-8f41f83ca968)
+
+![self_infliected_line](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/fc208382-0d72-494d-89b0-f9c6dcb0128a)
+
+![terrorist_attacks_line](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/eb7eb48b-0606-4e22-85d5-93ec6e9fc8e6)
 
 Accidents and illnesses showed significant decreases over time.
 Self-inflicted incidents had spikes in the mid-1980s, 1996, and during the late 2000s.
@@ -40,8 +64,16 @@ Homicides had fluctuations with a spike in the early 1990s and a sharp decline a
 Terrorist attacks had spikes associated with notable incidents such as the Beirut U.S. Embassy Bombing, Oklahoma City Bombing, USS Cole Bombing, and the September 11th attacks.
 e. Bar charts showing the average annual decrease in fatalities per 100,000 soldiers over 10-year periods.
 
+![total_deaths_avg](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/cece1bc3-9408-42e4-8460-758043409e64)
+
 Accident deaths showed a decreasing trend over the three 10-year time periods.
+
+![accident_decrease_bar](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/c4f67f3b-9206-4e7a-99c9-956d473cf7de)
+
 Self-inflicted deaths had minimal decreases in the 1980s, a rise in the early 1990s, a sharp drop in the late 1990s, and a final spike in the late 2000s.
+
+![self_inflicted_10_year](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/be98b8b0-135a-4269-b269-0c2a59c3bb13)
+
 3. Data Visualization Techniques
 Various data visualization techniques were employed:
 
