@@ -1,4 +1,4 @@
-import clean
+import file_import
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
@@ -593,7 +593,7 @@ def total_deaths_decrease(df):
     
 
 if __name__ == '__main__':
-    df = clean.file_import('Data/U.S. Military Deaths by cause 1980-2010.csv')
+    df = file_import.file_import('Data/U.S. Military Deaths by cause 1980-2010.csv')
     print("test")
     print(df.head(2))
     # fatality_bd_doughnut(df)
