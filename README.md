@@ -13,7 +13,7 @@ The main objective of the analysis was to develop visual charts based on the dat
 
 ### 2. Visualizations and Observations
 
-#### a. Line plot showing year-by-year changes in total military strength.
+a. Line plot showing year-by-year changes in total military strength.
 ![total_mil_strength_line](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/0090d61a-7460-4f7d-95a3-1071e98c6a94)
 
 
@@ -27,13 +27,13 @@ b. Three doughnut charts illustrating force distribution in 1980, 1990, and 2010
 
 ![2010_pop_doughnut](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/d7200b56-09fe-4304-b5e9-370497bae488)
 
-Noted a decrease in the percentage of active duty force and an increase in Guard and Reserve components from 1980 to 2010.
+### Noted a decrease in the percentage of active duty force and an increase in Guard and Reserve components from 1980 to 2010.
 
 c. Doughnut chart representing the categorical breakdown of U.S. military fatalities.
 
 ![fatality_category_breakdown](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/de24ef2e-0290-49d0-a8d9-fd8690d1859b)
 
-Found that accidents accounted for the majority (52.10%) of all fatalities, followed by illnesses, self-inflicted incidents, hostile actions, homicides, and terrorist attacks.
+### Found that accidents accounted for the majority (52.10%) of all fatalities, followed by illnesses, self-inflicted incidents, hostile actions, homicides, and terrorist attacks.
 
 d. Line charts representing trends in different categories of fatalities per 100,000 soldiers.
 
