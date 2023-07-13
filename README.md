@@ -75,7 +75,9 @@ Doughnut charts to illustrate force distribution and categorical breakdown.
 Line charts to represent trends over time.
 Bar charts to show changes over time periods.
 Visualization choices were made to ensure an accurate representation of the data and effectively highlight trends.
+
 4. Data Preprocessing and Cleaning
+
 The dataset was already well-structured, with no missing values. However, some column names had leading or trailing whitespaces, which were removed using the .strip() method.
 
 5. Challenges Faced
