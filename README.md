@@ -35,14 +35,14 @@ b. Three doughnut charts illustrating force distribution in 1980, 1990, and 2010
 
 ![2010_pop_doughnut](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/d7200b56-09fe-4304-b5e9-370497bae488)
 
-
 Noted a decrease in the percentage of active duty force and an increase in Guard and Reserve components from 1980 to 2010.
+
 c. Doughnut chart representing the categorical breakdown of U.S. military fatalities.
 
 ![fatality_category_breakdown](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/de24ef2e-0290-49d0-a8d9-fd8690d1859b)
 
-
 Found that accidents accounted for the majority (52.10%) of all fatalities, followed by illnesses, self-inflicted incidents, hostile actions, homicides, and terrorist attacks.
+
 d. Line charts representing trends in different categories of fatalities per 100,000 soldiers.
 
 ![accident_line](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/75806fa6-aa39-4e50-969b-1b820396409f)
@@ -62,6 +62,7 @@ Self-inflicted incidents had spikes in the mid-1980s, 1996, and during the late 
 Hostile actions had significant events, such as the 1983 Beirut Barracks Bombing and the War on Terror.
 Homicides had fluctuations with a spike in the early 1990s and a sharp decline afterward.
 Terrorist attacks had spikes associated with notable incidents such as the Beirut U.S. Embassy Bombing, Oklahoma City Bombing, USS Cole Bombing, and the September 11th attacks.
+
 e. Bar charts showing the average annual decrease in fatalities per 100,000 soldiers over 10-year periods.
 
 ![total_deaths_avg](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/cece1bc3-9408-42e4-8460-758043409e64)
@@ -75,6 +76,7 @@ Self-inflicted deaths had minimal decreases in the 1980s, a rise in the early 19
 ![self_inflicted_10_year](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/be98b8b0-135a-4269-b269-0c2a59c3bb13)
 
 3. Data Visualization Techniques
+
 Various data visualization techniques were employed:
 
 Line plots to show year-by-year changes.
@@ -86,15 +88,19 @@ Visualization choices were made to ensure an accurate representation of the data
 The dataset was already well-structured, with no missing values. However, some column names had leading or trailing whitespaces, which were removed using the .strip() method.
 
 5. Challenges Faced
+
 The challenges during the analysis included determining the story to tell based on the available data, minimizing wasted space in the graphs, and calculating accurate representations of data through ratioed calculations.
 
 6. Key Findings
+
 The most significant finding was the significant decline in the rate of fatal accidents from 1980 to 2010. This decrease can be attributed to safety programs, enhanced military training, protective equipment, policy implementation, and cultural shifts.
 
 7. Interpretation and Utilization of Results
+
 The results provide historical insights into the U.S. military population, culture, and the impact of various factors on the statistical data. They can be used to understand changes in military operations, policy initiatives, training, technology adoption, and demographic shifts over time.
 
 Running the Code
+
 To run the code for this analysis:
 
 Make sure you have Python and the required dependencies installed.
