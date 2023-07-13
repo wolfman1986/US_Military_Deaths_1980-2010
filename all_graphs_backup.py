@@ -459,7 +459,7 @@ def accident_pct_change(df):
     # Create a bar chart to visualize the average annual decrease for each time period
     plt.bar(labels, average_decreases)
 
-    plt.xlabel('Time Period')
+    # plt.xlabel('Time Period')
     # plt.ylabel('Percentage')
     plt.title('Percent change of Accidents \nper 100,000 Soldiers(5-Year Intervals)')
 
@@ -678,6 +678,6 @@ if __name__ == '__main__':
     # homicide_ratio(df)
     # terrorist_ratio(df)
     accident_pct_change(df)
-    self_inflicted_pct_ch(df)
+    # self_inflicted_pct_ch(df)
     # total_deaths_pct_ch(df)
     # total_deaths_bar(df)
