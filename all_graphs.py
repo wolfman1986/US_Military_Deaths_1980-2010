@@ -433,94 +433,35 @@ def terrorist_ratio(df):
 #############################################################################################################
 
 
-def accident_decrease(df):
-    # Filter the data for different time periods
-    df_1980_1989 = df[(df['Calendar Year'] >= 1980) & (df['Calendar Year'] <= 1989)].copy()
-    df_1990_1999 = df[(df['Calendar Year'] >= 1990) & (df['Calendar Year'] <= 1999)].copy()
-    df_2000_2010 = df[(df['Calendar Year'] >= 2000) & (df['Calendar Year'] <= 2010)].copy()
+import matplotlib.pyplot as plt
 
-    # Calculate the average annual decrease per 100,000 soldiers for each time period
-    df_1980_1989.loc[:, 'Accidents per 100,000 Soldiers'] = (df_1980_1989['Accident'] / df_1980_1989['Total Military FTE']) * 100000
-    avg_decrease_1980_1989 = ((df_1980_1989['Accidents per 100,000 Soldiers'].iloc[-1] / df_1980_1989['Accidents per 100,000 Soldiers'].iloc[0]) ** (1 / len(df_1980_1989)) - 1) * 100
+def accident_pct_change(df):
+    # Define the 5-year time intervals
+    intervals = [(1980, 1984), (1985, 1989), (1990, 1994), (1995, 1999), (2000, 2004), (2005, 2010)]
 
-    df_1990_1999.loc[:, 'Accidents per 100,000 Soldiers'] = (df_1990_1999['Accident'] / df_1990_1999['Total Military FTE']) * 100000
-    avg_decrease_1990_1999 = ((df_1990_1999['Accidents per 100,000 Soldiers'].iloc[-1] / df_1990_1999['Accidents per 100,000 Soldiers'].iloc[0]) ** (1 / len(df_1990_1999)) - 1) * 100
+    average_decreases = []
+    labels = []
 
-    df_2000_2010.loc[:, 'Accidents per 100,000 Soldiers'] = (df_2000_2010['Accident'] / df_2000_2010['Total Military FTE']) * 100000
-    avg_decrease_2000_2010 = ((df_2000_2010['Accidents per 100,000 Soldiers'].iloc[-1] / df_2000_2010['Accidents per 100,000 Soldiers'].iloc[0]) ** (1 / len(df_2000_2010)) - 1) * 100
+    for start, end in intervals:
+        # Filter the data for the specified time period
+        df_interval = df[(df['Calendar Year'] >= start) & (df['Calendar Year'] <= end)].copy()
 
-    # Set the figure size
-    plt.figure(figsize=(2, 1.5))
+        # Calculate the average annual decrease per 100,000 soldiers for the interval
+        df_interval['Accidents per 100,000 Soldiers'] = (df_interval['Accident'] / df_interval['Total Military FTE']) * 100000
+        avg_decrease = ((df_interval['Accidents per 100,000 Soldiers'].iloc[-1] / df_interval['Accidents per 100,000 Soldiers'].iloc[0]) ** (1 / len(df_interval)) - 1) * 100
 
-    # Create a bar chart to visualize the average annual decrease for each time period
-    time_periods = ['1980-1989', '1990-1999', '2000-2010']
-    average_decreases = [avg_decrease_1980_1989, avg_decrease_1990_1999, avg_decrease_2000_2010]
-
-    bar_width = 0.4  # Adjust the width of the bars
-    spacing = 0.1  # Adjust the spacing between the bars
-
-    plt.bar(time_periods, average_decreases, width=bar_width, align='center')
-
-    # plt.xlabel('Time Period')
-    # plt.ylabel('Average Annual Decrease (%)')
-    plt.title('Average Annual Decrease of \nAccidents per 100,000 Soldiers')
-
-    # Set the desired distance between the x-axis gridlines
-    plt.gca().xaxis.set_tick_params(which='both', width=0.2, length=3, pad=5)
-
-    # Format y-axis labels as percentages
-    plt.gca().yaxis.set_major_formatter('{:.1f}%'.format)
-
-    plt.grid(False)  # Remove gridlines
-    plt.xticks(rotation=45)  # Rotate x-axis tick labels if needed
-
-    plt.show()
-
-##############################################################################################################
-
-def self_inflicted_decrease(df):
-    # Filter the data for different time periods
-    df_1980_1984 = df[(df['Calendar Year'] >= 1980) & (df['Calendar Year'] <= 1984)].copy()
-    df_1985_1989 = df[(df['Calendar Year'] >= 1985) & (df['Calendar Year'] <= 1989)].copy()
-    df_1990_1994 = df[(df['Calendar Year'] >= 1990) & (df['Calendar Year'] <= 1994)].copy()
-    df_1995_1999 = df[(df['Calendar Year'] >= 1995) & (df['Calendar Year'] <= 1999)].copy()
-    df_2000_2004 = df[(df['Calendar Year'] >= 2000) & (df['Calendar Year'] <= 2004)].copy()
-    df_2005_2010 = df[(df['Calendar Year'] >= 2005) & (df['Calendar Year'] <= 2010)].copy()
-
-    # Calculate the average annual decrease per 100,000 soldiers for each time period
-    df_1980_1984.loc[:, 'Self-Inflicted per 100,000 Soldiers'] = (df_1980_1984['Self-Inflicted'] / df_1980_1984['Total Military FTE']) * 100000
-    avg_decrease_1980_1984 = ((df_1980_1984['Self-Inflicted per 100,000 Soldiers'].iloc[-1] / df_1980_1984['Self-Inflicted per 100,000 Soldiers'].iloc[0]) ** (1 / len(df_1980_1984)) - 1) * 100
-
-    df_1985_1989.loc[:, 'Self-Inflicted per 100,000 Soldiers'] = (df_1985_1989['Self-Inflicted'] / df_1985_1989['Total Military FTE']) * 100000
-    avg_decrease_1985_1989 = ((df_1985_1989['Self-Inflicted per 100,000 Soldiers'].iloc[-1] / df_1985_1989['Self-Inflicted per 100,000 Soldiers'].iloc[0]) ** (1 / len(df_1985_1989)) - 1) * 100
-
-    df_1990_1994.loc[:, 'Self-Inflicted per 100,000 Soldiers'] = (df_1990_1994['Self-Inflicted'] / df_1990_1994['Total Military FTE']) * 100000
-    avg_decrease_1990_1994 = ((df_1990_1994['Self-Inflicted per 100,000 Soldiers'].iloc[-1] / df_1990_1994['Self-Inflicted per 100,000 Soldiers'].iloc[0]) ** (1 / len(df_1990_1994)) - 1) * 100
-
-    df_1995_1999.loc[:, 'Self-Inflicted per 100,000 Soldiers'] = (df_1995_1999['Self-Inflicted'] / df_1995_1999['Total Military FTE']) * 100000
-    avg_decrease_1995_1999 = ((df_1995_1999['Self-Inflicted per 100,000 Soldiers'].iloc[-1] / df_1995_1999['Self-Inflicted per 100,000 Soldiers'].iloc[0]) ** (1 / len(df_1995_1999)) - 1) * 100
-
-    df_2000_2004.loc[:, 'Self-Inflicted per 100,000 Soldiers'] = (df_2000_2004['Self-Inflicted'] / df_2000_2004['Total Military FTE']) * 100000
-    avg_decrease_2000_2004 = ((df_2000_2004['Self-Inflicted per 100,000 Soldiers'].iloc[-1] / df_2000_2004['Self-Inflicted per 100,000 Soldiers'].iloc[0]) ** (1 / len(df_2000_2004)) - 1) * 100
-
-    df_2005_2010.loc[:, 'Self-Inflicted per 100,000 Soldiers'] = (df_2005_2010['Self-Inflicted'] / df_2005_2010['Total Military FTE']) * 100000
-    avg_decrease_2005_2010 = ((df_2005_2010['Self-Inflicted per 100,000 Soldiers'].iloc[-1] / df_2005_2010['Self-Inflicted per 100,000 Soldiers'].iloc[0]) ** (1 / len(df_2005_2010)) - 1) * 100
+        average_decreases.append(avg_decrease)
+        labels.append(f'{start}-{end}')
 
     # Set the figure size
-    plt.figure(figsize=(2.5, 2.5))
+    plt.figure(figsize=(2.5, 3))
 
     # Create a bar chart to visualize the average annual decrease for each time period
-    time_periods = ['1980-1984', '1985-1989', '1990-1994', '1995-1999', '2000-2004', '2005-2010']
-    average_decreases = [avg_decrease_1980_1984, avg_decrease_1985_1989, avg_decrease_1990_1994,
-                        avg_decrease_1995_1999, avg_decrease_2000_2004, avg_decrease_2005_2010]
+    plt.bar(labels, average_decreases)
 
-    bar_width = 1.0  # Adjust the width of the bars (set to 1 for bars to touch)
-    spacing = 0.1  # Adjust the spacing between the bars
-
-    plt.bar(time_periods, average_decreases, width=bar_width, align='edge')
-
-    # plt.xlabel('Time Period')
-    plt.title('Average Change in Self-Inflicted Deaths \n(5-Year Periods) per 100,000 Soldiers')
+    plt.xlabel('Time Period')
+    # plt.ylabel('Percentage')
+    plt.title('Percent change of Accidents \nper 100,000 Soldiers(5-Year Intervals)')
 
     plt.xticks(rotation=45)  # Rotate x-axis tick labels if needed
 
@@ -531,12 +472,58 @@ def self_inflicted_decrease(df):
 
     plt.tight_layout()
     plt.show()
+
+
+##############################################################################################################
+
+import matplotlib.pyplot as plt
+
+def self_inflicted_pct_ch(df):
+    # Define the 5-year time intervals
+    intervals = [(1980, 1984), (1985, 1989), (1990, 1994), (1995, 1999), (2000, 2004), (2005, 2010)]
+
+    average_decreases = []
+
+    for start, end in intervals:
+        # Filter the data for the specified time period
+        df_interval = df[(df['Calendar Year'] >= start) & (df['Calendar Year'] <= end)].copy()
+
+        # Calculate the average annual decrease per 100,000 soldiers for the interval
+        df_interval['Self-Inflicted per 100,000 Soldiers'] = (df_interval['Self-Inflicted'] / df_interval['Total Military FTE']) * 100000
+        avg_decrease = ((df_interval['Self-Inflicted per 100,000 Soldiers'].iloc[-1] / df_interval['Self-Inflicted per 100,000 Soldiers'].iloc[0]) ** (1 / len(df_interval)) - 1) * 100
+
+        average_decreases.append(avg_decrease)
+
+    # Set the figure size
+    plt.figure(figsize=(2.5, 3))
+
+    # Create a bar chart to visualize the average annual decrease for each time period
+    time_periods = [f'{start}-{end}' for start, end in intervals]
+
+    bar_width = 0.8  # Adjust the width of the bars
+
+    plt.bar(time_periods, average_decreases, width=bar_width)
+
+    plt.xlabel('Time Period')
+    # plt.ylabel('Percentage Decrease')
+    plt.title('Percent Change of Self-Inflicted \nper 100,000 Soldiers(5-Year Intervals)')
+
+    plt.xticks(rotation=45)  # Rotate x-axis tick labels if needed
+
+    # Format y-axis labels as percentages
+    plt.gca().yaxis.set_major_formatter('{:.1f}%'.format)
+
+    plt.grid(False)  # Remove gridlines
+
+    plt.tight_layout()
+    plt.show()
+
     
     
     
     #############################################################################################
     
-def total_deaths_decrease(df):
+def total_deaths_bar(df):
     
     # Filter the data for different time periods
     df_1980_1984 = df[(df['Calendar Year'] >= 1980) & (df['Calendar Year'] <= 1984)].copy()
@@ -591,6 +578,91 @@ def total_deaths_decrease(df):
     plt.tight_layout()
     plt.show()
     
+    ###########################################################################################################################
+    
+def total_deaths_line(df):
+    calendar_year = df['Calendar Year']
+    total_fte = df['Total Military FTE']
+    total_deaths = df['Total Deaths']
+
+    # Calculate the ratio of accidents to total military FTE per 100,000 servicemembers
+    ratio = (total_deaths / total_fte) * 100000
+
+    # Determine the ratio label based on the ratio used
+    ratio_label = "Per 100,000 Servicemembers"
+
+    # Desired figure size
+    plt.figure(figsize=(2.5, 3))
+
+    plt.plot(calendar_year, ratio)
+    plt.xlim(1980, 2010)
+
+    # Remove x-axis label
+    plt.xlabel(None)
+
+    # Lighten the horizontal gridlines
+    plt.gca().yaxis.grid(color='lightgray', linestyle=':', linewidth=0.5)
+
+    # Position the title below the x-axis, outside the graph, and centered
+    plt.title('Total Deaths', pad=-7, loc='center', y=-0.15)
+
+    plt.gca().spines['left'].set_visible(False)  # Remove left spine after gridlines are drawn
+
+    # Set y-axis label with the specific ratio label
+    plt.ylabel(ratio_label)
+
+    plt.tight_layout()  # Adjust spacing to prevent overlapping
+
+    plt.show()
+    
+    
+    ###################################################################################################################################
+    
+   
+
+
+import matplotlib.pyplot as plt
+
+def total_deaths_pct_ch(df):
+    # Define the intervals for calculating average percentage changes
+    intervals = [(1980, 1985), (1985, 1989), (1990, 1994), (1995, 1999), (2000, 2004), (2005, 2010)]
+
+    interval_changes = []
+    labels = []
+
+    for start, end in intervals:
+        start_deaths = df.loc[df['Calendar Year'] == start, 'Total Deaths'].iloc[0]
+        end_deaths = df.loc[df['Calendar Year'] == end, 'Total Deaths'].iloc[0]
+
+        percentage_change = ((end_deaths - start_deaths) / start_deaths) * 100
+        interval_changes.append(percentage_change)
+
+        labels.append(f'{start}-{end}')
+
+    # Set the figure size
+    plt.figure(figsize=((3, 4)))
+
+    # Create a bar chart to visualize the average percentage change for each interval
+    plt.bar(labels, interval_changes)
+
+    # plt.xlabel('Time Period')
+    # plt.ylabel('Percentage Change')
+    plt.title('Avg % Change in Total Deaths \nper 100,000 Soldiers')
+
+    plt.xticks(rotation=45)  # Rotate x-axis tick labels
+
+    # Format y-axis labels as percentages
+    plt.gca().yaxis.set_major_formatter('{:.1f}%'.format)
+
+    plt.grid(False)  # Add gridlines
+
+    plt.tight_layout()
+    plt.show()
+
+
+
+
+        
 
 if __name__ == '__main__':
     df = file_import.file_import('Data/U.S. Military Deaths by cause 1980-2010.csv')
@@ -605,6 +677,7 @@ if __name__ == '__main__':
     # hostile_action_ratio(df)
     # homicide_ratio(df)
     # terrorist_ratio(df)
-    # accident_decrease(df)
-    self_inflicted_decrease(df)
-    # total_deaths_decrease(df)
+    accident_pct_change(df)
+    self_inflicted_pct_ch(df)
+    # total_deaths_pct_ch(df)
+    # total_deaths_bar(df)
