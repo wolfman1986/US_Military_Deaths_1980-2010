@@ -93,7 +93,7 @@ The most significant finding was the significant decline in the rate of fatal ac
 
 The results provide historical insights into the U.S. military population, culture, and the impact of various factors on the statistical data. They can be used to understand changes in military operations, policy initiatives, training, technology adoption, and demographic shifts over time.
 
-Running the Code
+### Running the Code
 
 To run the code for this analysis:
 
@@ -101,7 +101,7 @@ Make sure you have Python and the required dependencies installed.
 Download the dataset from www.kaggle.com and place it in the same directory as the code.
 Run the Python script to execute the analysis and generate the visualizations.
 
-Additional Notes
+### Additional Notes
 
 The code provided is for reference purposes only and may require adjustments based on your specific environment and dataset.
 Feel free to modify the code or adapt it to suit your requirements.
