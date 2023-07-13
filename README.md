@@ -49,11 +49,11 @@ d. Line charts representing trends in different categories of fatalities per 100
 
 ![terrorist_attacks_line](https://github.com/wolfman1986/US_Military_Deaths_1980-2010/assets/36992236/eb7eb48b-0606-4e22-85d5-93ec6e9fc8e6)
 
-Accidents and illnesses showed significant decreases over time.
-Self-inflicted incidents had spikes in the mid-1980s, 1996, and during the late 2000s.
-Hostile actions had significant events, such as the 1983 Beirut Barracks Bombing and the War on Terror.
-Homicides had fluctuations with a spike in the early 1990s and a sharp decline afterward.
-Terrorist attacks had spikes associated with notable incidents such as the Beirut U.S. Embassy Bombing, Oklahoma City Bombing, USS Cole Bombing, and the September 11th attacks.
+### Accidents and illnesses showed significant decreases over time.
+### Self-inflicted incidents had spikes in the mid-1980s, 1996, and during the late 2000s.
+### Hostile actions had significant events, such as the 1983 Beirut Barracks Bombing and the War on Terror.
+### Homicides had fluctuations with a spike in the early 1990s and a sharp decline afterward.
+### Terrorist attacks had spikes associated with notable incidents such as the Beirut U.S. Embassy Bombing, Oklahoma City Bombing, USS Cole Bombing, and the September 11th attacks.
 
 e. Bar charts showing the average annual decrease in fatalities per 100,000 soldiers over 10-year periods.
 
